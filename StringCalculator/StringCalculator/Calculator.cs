@@ -1,10 +1,14 @@
-﻿namespace StringCalculator
+﻿using System;
+
+namespace StringCalculator
 {
     public class Calculator
     {
-        public int CalculateSum(string empty)
+        public int CalculateSum(String number)
         {
-            return 0;
+            if (String.IsNullOrEmpty(number)) return 0;
+
+            return Int32.Parse(number);
         }
     }
 }
