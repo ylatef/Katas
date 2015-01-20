@@ -39,12 +39,34 @@ namespace StringCalculatorTests
         }
 
         [TestFixture]
-        public class given_an_alphabetical_string
+        public class given_an_invalid_string
         {
+            private const string CalculatorInput = "bcde*";
+
             [Test]
             public void it_should_throw_an_argument_exception()
             {
-                Assert.Throws<ArgumentException>(() => Calculator.CalculateSum("a"));
+                Assert.Throws<ArgumentException>(() => CalculateSum());
+            }
+
+            [Test]
+            public void it_should_alert_the_user()
+            {
+                var ex = Assert.Catch<Exception>(() => CalculateSum());
+                Assert.That(ex.Message,
+                    Is.StringStarting("Input must only contain numeric characters and commas"));
+            }
+
+            [Test]
+            public void it_should_report_the_input()
+            {
+                var ex = Assert.Catch<Exception>(() => CalculateSum());
+                Assert.That(ex.Message, Is.StringContaining(CalculatorInput));
+            }
+
+            private int CalculateSum()
+            {
+                return Calculator.CalculateSum(CalculatorInput);
             }
         }
             
@@ -60,6 +82,5 @@ namespace StringCalculatorTests
                 Assert.That(result, Is.EqualTo(number));
             }
         }
-
     }
 }
