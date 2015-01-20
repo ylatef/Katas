@@ -27,6 +27,14 @@ namespace StringCalculatorTests
                 var calculator = new Calculator();
                 Assert.Throws<ArgumentNullException>(() => calculator.CalculateSum(null));
             }
+
+            [Test]
+            public void it_should_alert_the_user()
+            {
+                var calculator = new Calculator();
+                var ex = Assert.Catch<Exception>(() => calculator.CalculateSum(null));
+                Assert.That(ex.Message, Is.StringContaining("number"));
+            }
         }
 
         [TestFixture]

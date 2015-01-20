@@ -6,8 +6,8 @@ namespace StringCalculator
     {
         public int CalculateSum(String number)
         {
-            if (String.IsNullOrEmpty(number)) return 0;
-
+            if (number == null) throw new ArgumentNullException("number");
+            if (number.Equals(String.Empty)) return 0;
             return Int32.Parse(number);
         }
     }
