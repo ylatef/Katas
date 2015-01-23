@@ -7,8 +7,8 @@
     <ProjectGuid>{859CEFAD-5D5F-4A88-A68E-C05D2535E85B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>StringCalculatorTests</RootNamespace>
-    <AssemblyName>StringCalculatorTests</AssemblyName>
+    <RootNamespace>Tests</RootNamespace>
+    <AssemblyName>Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
