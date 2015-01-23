@@ -5,5 +5,9 @@ using NUnit.Framework;
 
 namespace Tests
 {
-
+    [TestFixture]
+    public class add_should
+    {
+        
+    }
 }
