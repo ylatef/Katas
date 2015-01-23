@@ -7,8 +7,8 @@
     <ProjectGuid>{38D92487-9B5A-4680-961E-DC4EB9D916B4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>StringCalculator</RootNamespace>
-    <AssemblyName>StringCalculator</AssemblyName>
+    <RootNamespace>Console</RootNamespace>
+    <AssemblyName>Console</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
